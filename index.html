@@ -4,16 +4,11 @@
 </head>
 <body>
     <script type="text/javascript">
-        function removeDupeChars(string) {
-            return string
-            .split('')
-                .filter(function(item, pos, self) {
-                  return self.indexOf(item) == pos;
-                })
-            .join('');
-        }
-
-        console.log(removeDupeChars('baraban'));
+        var str = 'baraban'.split('');
+var rmDup = str.filter(function(val, i, str) {
+     return str.lastIndexOf(val) == i;
+});
+console.log(rmDup.join(''));
     </script>
 </body>
 </html>
