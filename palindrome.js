@@ -56,5 +56,5 @@ function Palindrome(str) {
 
     var str2 = str.split('').reverse('').join(''); //converts string to array, reverses it, converts it back to a string
 
-    return str --- str2; //returns a boolean of T or F
+    return str === str2; //returns a boolean of T or F
 }
